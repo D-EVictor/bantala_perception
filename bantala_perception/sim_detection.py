@@ -49,7 +49,7 @@ class SimPersonTracker(Node):
         self.min_interval = 1.0 / TARGET_FPS
 
         # Publishers
-        self.image_pub = self.create_publisher(CompressedImage, '/sim_cam/yolo/annotated/compressed', 10)
+        self.image_pub = self.create_publisher(CompressedImage, '/sim_cam/annotated/compressed', 10)
         self.person_pub = self.create_publisher(String, '/sim_cam/detected_persons', 10)
         self.weapon_pub = self.create_publisher(String, '/sim_cam/detected_weapons', 10)
 
